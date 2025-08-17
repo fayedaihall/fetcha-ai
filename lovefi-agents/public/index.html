@@ -8,10 +8,25 @@
 <body>
     <h1>LoveFi Agents API</h1>
     <p>This is the LoveFi dating matcher agent API.</p>
-    <p>Available endpoints:</p>
+    <p>Available API endpoints:</p>
     <ul>
-        <li><a href="/api/test">/api/test</a> - Test API endpoint</li>
-        <li><a href="/api/index">/api/index</a> - Main API endpoint</li>
+        <li><a href="/api/test">/api/test</a> - ✅ Fixed test endpoint (working)</li>
+        <li><a href="/api/simple">/api/simple</a> - ✅ Simple compatibility analyzer (working)</li>
+        <li><a href="/api/index">/api/index</a> - Advanced compatibility analyzer (FastAPI)</li>
     </ul>
+    <h2>API Usage</h2>
+    <p>For compatibility analysis, send a POST request to <code>/api/simple</code> with:</p>
+    <pre>{
+  "profile1": {
+    "age": 25,
+    "interests": ["hiking", "music"],
+    "location": "New York"
+  },
+  "profile2": {
+    "age": 27,
+    "interests": ["hiking", "art"],
+    "location": "New York"
+  }
+}</pre>
 </body>
 </html>

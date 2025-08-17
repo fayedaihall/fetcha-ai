@@ -1,1 +1,4 @@
-# Minimal requirements for testing
+# Required dependencies for Vercel serverless functions
+fastapi>=0.68.0
+mangum>=0.17.0
+uvicorn>=0.15.0
